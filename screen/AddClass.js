@@ -47,7 +47,7 @@ const AddClass = () => {
       console.error("Error adding document: ", e);
     }
   };
-  console.log(tname)
+  // console.log(tname)
 
   return (
     <View style={{margin:10}}>
@@ -56,9 +56,6 @@ const AddClass = () => {
      <DataModal2 title={"select Day"}selectData={day} setData={setday} data={days}/>
      <DataModal2 title={"select Time"}selectData={time} setData={setTime} data={times}/>
      <DataModal2 title={"select class"}selectData={classname} setData={setClassName} data={allClass}/>
-
-
-
      <Datamodal title={"select teacher name"}selectData={tname.name} setData={setTname} data={teachers}/>
      <Datamodal title={"select subject name"}selectData={subject.name} setData={setSubject} data={subjects}/>
 
