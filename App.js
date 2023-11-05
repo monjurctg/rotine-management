@@ -1,13 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import AddClass from './screen/AddClass';
+import Teachers from './screen/Teachers';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Filter from './screen/Filter';
+
+const Stack = createNativeStackNavigator();
 
 
 export default function App() {
   return (
-    <View style={styles.container}>
-   <AddClass/>
-    </View>
+      <View style={styles.container}>
+
+
+    
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={AddClass} />
+        <Stack.Screen name="filter" component={Filter} />
+
+      </Stack.Navigator>
+    </NavigationContainer>
+      </View>
   );
 }
 
@@ -16,8 +31,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     // alignItems: 'center',
-    
+
     justifyContent: 'center',
-    width:"100%"
+    width: "100%"
   },
 });
