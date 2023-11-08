@@ -17,7 +17,7 @@ export default function App() {
     
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={Teachers} />
+        <Stack.Screen name="Home" component={AddClass} />
         <Stack.Screen name="filter" component={Filter} />
 
       </Stack.Navigator>
