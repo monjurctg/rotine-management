@@ -73,7 +73,7 @@ const AddClass = () => {
       if (querySnapshot.empty) {
         // If no matching documents were found, add a new document
         const docRef = await addDoc(collection(db, "rotine"), {
-          subject,
+        
           tname,
           day,
           time,
