@@ -100,17 +100,16 @@ const AddClass = () => {
     <ScrollView  style={{margin:10}}>
       
      {/* <Text>Select Teacher Name</Text> */}
-     <DataModal2 title={"select Day"}selectData={day} setData={setday} data={days}/>
+    <View style={{justifyConten:"center",marginTop:30}}>
+
+    <DataModal2 title={"select Day"}selectData={day} setData={setday} data={days}/>
      <DataModal2 title={"select Time"}selectData={time} setData={setTime} data={times}/>
      <DataModal2 title={"select class"}selectData={classname} setData={setClassName} data={allClass}/>
      <Datamodal title={"select teacher name"}selectData={tname.name} setData={setTname} data={teachers}/>
      <Datamodal title={"select subject name"}selectData={subject.name} setData={setSubject} data={subjects}/>
       <Button title="Add Class" onPress={addTodo} />
-      {todos.map((todo, index) => (
-        <View key={index}>
-          <Text>{todo.text}</Text>
-        </View>
-      ))}
+    </View>
+     
     </ScrollView>
   );
 };

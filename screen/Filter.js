@@ -95,7 +95,15 @@ const Filter = ({ navigation, route }) => {
                     </View>
                 })
             }
-            {/* <View  style={styles.rotine}></View> */}
+            {/* <View style={styles.rotine}></View>
+            <View style={styles.rotine}></View>
+
+            <View style={styles.rotine}></View>
+
+            <View style={styles.rotine}></View> */}
+
+          
+
                 
                 
 
@@ -121,11 +129,11 @@ const styles = StyleSheet.create({
         justifyContent:"center",alignItems:"center",marginTop:20,backgroundColor:"#b3d9ff",padding:13
     },
     rotine_container:{
-        flexDirection:"row",flexWrap:"wrap",marginTop:10,alignSelf:"center",gap:10
+        flexDirection:"row",flexWrap:"wrap",marginTop:10,alignSelf:"center",alignItems:"center",justifyContent:"space-between"
 
     },
     rotine:{
-        height:130,width:125 ,borderColor:"#ccc",borderWidth:1,justifyContent:"center",alignItems:"center",borderRadius:10
+        height:130,width:"33%" ,borderColor:"#ddd",borderWidth:1,justifyContent:"center",alignItems:"center"
 
     }
 })

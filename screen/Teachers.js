@@ -9,11 +9,12 @@ const Teachers = ({navigation}) => {
   return (
     <ScrollView style = {styles.container}>
       <StatusBar/>
+      <Text style={{textAlign:"center",fontSize:20,backgroundColor:"#0059b3",padding:10,color:"#FFF"}}>Select Teacher</Text>
       <View style={styles.content}>
         <View style={styles.teachers}>
           {
             teachers.map((t,index)=>  <TouchableOpacity key={index} onPress= {()=>navigation.navigate("filter",{name:t?.name})} style={styles.teacher}>
-            <Text>{t.name}</Text>
+            <Text style={{textAlign:"center",fontSize:16,color:"#99ccff",fontWeight:"500 "}}>{t.name}</Text>
           </TouchableOpacity>)
           }
 
@@ -35,7 +36,7 @@ backgroundColor:"#FFF",
   flex:1
   },
   content:{
-    justifyContent:"center",backgroundColor:"#fff",width:"100%",height:"100%",paddingVertical:50
+    justifyContent:"center",backgroundColor:"#fff",marginTop:30
   },
   teachers:{
     flexDirection:"row",flexWrap:"wrap",
